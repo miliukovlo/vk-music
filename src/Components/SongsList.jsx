@@ -1,6 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import React from 'react';
 import { useAppStore } from '../context/AppStoreProvider';
+import Song from './Song';
 
 const SongsList = observer(() => {
     const appStore = useAppStore()
@@ -11,11 +12,12 @@ const SongsList = observer(() => {
         <>
             {appStore.songs.map((song) => {
                 return (
-                    <div>
-                        <h1>{song.title}</h1>
-                        <h2>{song.author}</h2>
-                        <img src={song.poster} alt='Постер к фильму' />
-                    </div>
+                        <Song
+                            title={song.title}
+                            poster={song.poster}
+                            seconds={song.seconds}
+                            author={song.author}
+                        />
                 )
             })}
         </>
