@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/vk-test/static/css/main.82a94899.css",
+    "main.js": "/vk-test/static/js/main.b559db71.js",
+    "static/media/song.mp3": "/vk-test/static/media/song.52018cfde8447a279805.mp3",
+    "index.html": "/vk-test/index.html",
+    "main.82a94899.css.map": "/vk-test/static/css/main.82a94899.css.map",
+    "main.b559db71.js.map": "/vk-test/static/js/main.b559db71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82a94899.css",
+    "static/js/main.b559db71.js"
+  ]
+}
