@@ -1,4 +1,4 @@
-import { Div, Group, Panel, PanelHeader, SplitLayout, Title, View, usePlatform } from '@vkontakte/vkui';
+import { Div, Panel, PanelHeader, SplitLayout, Title, View, usePlatform } from '@vkontakte/vkui';
 import React from 'react';
 import { AppStoreProvider } from './context/AppStoreProvider';
 import SongsList from './Components/SongsList';
@@ -15,11 +15,9 @@ const App = () => {
               <Title level="1" weight='1'>Песни</Title>
             </PanelHeader>
               <Div>
-                <Group style={{margin: '100px'}} padding='m'>
                 <AppStoreProvider>
                   <SongsList/>
                 </AppStoreProvider>
-                </Group>
               </Div>
           </Panel>
         </View>
