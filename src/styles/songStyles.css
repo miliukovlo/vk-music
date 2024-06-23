@@ -14,3 +14,15 @@
 .image-hover:hover {
     opacity: 0.3;
 }
+.image-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(50%) ;
+}
+.poll-play {
+    fill: white !important;
+}
+.poll-hidden {
+    fill: transparent !important;
+}

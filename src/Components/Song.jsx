@@ -1,4 +1,4 @@
-import { Icon16MoreVertical } from '@vkontakte/icons';
+import { Icon16MoreVertical, Icon24Poll } from '@vkontakte/icons';
 import { IconButton, Image, RichCell, SimpleCell } from '@vkontakte/vkui';
 import React, { useState } from 'react';
 import {getSongTime} from '../Hooks/getSongTime'
@@ -43,7 +43,9 @@ const Song = React.memo(({
     }
     return (
         <SimpleCell size='l'
-        before={<Image onClick={playAudio} className='image-hover' size={88} borderRadius="l" src={poster} />}
+        before={<Image onClick={playAudio} className={isPlay ? 'image-play image-hover' : 'image-hover'} size={88} borderRadius="l" src={poster}>
+            <Icon24Poll fill={isPlay ? 'white' : 'transparent'}/>
+        </Image>}
         after={<SimpleCell after={<IconButton label='Подробнее' className='button-hover'>
             <Icon16MoreVertical/>
         </IconButton>}>
